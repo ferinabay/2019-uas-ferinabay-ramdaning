@@ -9,4 +9,7 @@ public interface BookService {
 
     @GET("volumes?q=maxResults=10&key=AIzaSyDjRIsF0OJskdadlFe7eSp84svB_xtb-kw")
     Call<Books> getBooks();
+
+    @GET("volumes?q=maxResults=10&filter=free-ebooks&key=AIzaSyDjRIsF0OJskdadlFe7eSp84svB_xtb-kw")
+    Call<Books> geteBooks();
 }
